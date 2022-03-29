@@ -7,10 +7,6 @@ void main() {
   
   List<String> answer1 = compareList(list1, list2);
   List<String> answer2 = compareList(list3, list4);
-  print(answer1);
-  print(answer2);
-  // [banana, apple]
-  // [banana] 
 }
 
 List<String> compareList(List<String> list1, List<String> list2) {
