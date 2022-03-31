@@ -2,6 +2,7 @@ main() {
   List values = [1, "a", 2, "b", "c", 3];
   List<int> intList = [];
   List<String> stringList = [];
+
   for (var value in values) {
     if (value is int) {
       intList.add(value);
