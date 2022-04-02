@@ -10,4 +10,16 @@ main() {
   Set<int> answer = diff1.union(diff2);
   print(answer);
   print(answer.toList());
+  // {1, 2, 3, 8, 7, 6}
+  // [1, 2, 3, 8, 7, 6]
+  
+  // 関数を使った場合
+  // When using a function
+  Set<int> answer2 = symmetricDifference(listBox1.toSet(), listBox2.toSet());
+  print(answer2);
+  // {1, 2, 3, 8, 7, 6}
+}
+
+Set<T> symmetricDifference<T>(Set<T> set1, Set<T> set2) {
+  return set1.difference(set2).union(set2.difference(set1));
 }
