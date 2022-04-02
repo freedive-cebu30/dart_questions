@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 main() {
   // 配列に入れる前に、その値が含まれているか確認しています
-  // We will check the contents before it is already inside or not.
+  // We will check the contents before it is already inside or not
   List<int> intBoxes = [];
   for (var i = 0; i < 20; i++) {
     var rand = math.Random();
