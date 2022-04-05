@@ -6,8 +6,15 @@ main() {
                               "banana" : 400, 
                               "orange" : 300 };
   
-  SplayTreeMap.from(fruits,
-                    (v1, v2) => fruits[v1]! - fruits[v2]!
-                   );
-  print(fruits);
+  // どちらの書き方でも大丈夫です
+  // either way is fine
+  var sortedFruit = SplayTreeMap.from(fruits,
+                                       (v1, v2) => fruits[v1]!.compareTo(fruits[v2]!)
+                                      );
+  print(sortedFruit);
+  
+  var sortedFruit2 = SplayTreeMap.from(fruits,
+                                        (v1, v2) => fruits[v1]! - fruits[v2]!
+                                       );
+  print(sortedFruit2);
 }
