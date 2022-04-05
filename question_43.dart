@@ -8,10 +8,10 @@ main() {
                                       ];
   
   people.sort(
-    (n1, n2){ 
-      int result = n1["height"] - n2["height"];
+    (v1, v2){ 
+      int result = v1["height"] - v2["height"];
       if (result != 0) return result;
-      int result2 = n2["age"] - n1["age"];
+      int result2 = v2["age"] - v1["age"];
       return result2;
     });
   print(people);
