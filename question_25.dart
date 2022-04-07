@@ -5,6 +5,6 @@ void main() {
   List<int> doubleValues = values.map((value) => value * 2).toList();
   print(doubleValues);
   
-  List<int> doubleValues2 = [for (var i in values) i * 2];
+  List<int> doubleValues2 = [for (var value in values) value * 2];
   print(doubleValues2);
 }
