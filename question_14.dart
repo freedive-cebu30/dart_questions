@@ -4,7 +4,6 @@ void main() {
   
   var answer = compareString(s1, s2);
   print(answer);
-  
 }
 
 List<String> compareString(String str1, String str2){
