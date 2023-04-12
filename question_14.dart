@@ -7,7 +7,7 @@ void main() {
   
 }
 
-String compareString(String str1, String str2){
+List<String> compareString(String str1, String str2){
   List<String> subjectChars1 = str1.split('');
   List<String> subjectChars2 = str2.split('');
   List<String> repetitionChars = [];
@@ -20,5 +20,5 @@ String compareString(String str1, String str2){
     }
   }
   
-  return repetitionChars.join();
+  return repetitionChars;
 }
